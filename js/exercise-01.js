@@ -9,3 +9,23 @@
       Log 'name' value.
 
 */
+
+//Declare variable
+let name = "Daniel";
+
+//Declare function
+function updateValue(value) {
+    name = value;
+}
+
+
+updateValue("Chopin");
+console.log("Musician: ",name);
+
+
+updateValue(true);
+console.log(name);
+
+
+updateValue(28);
+console.log(name);
