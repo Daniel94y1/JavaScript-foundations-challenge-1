@@ -7,9 +7,9 @@
 
     HINT: modulus operator ( % ) is your friend
 */
-var number = 16;
+let number = 16;
 number = 1;
-number = 33;
+number = 34;
 
 if (number % 2 === 0) {
   console.log("The number is even.");

@@ -11,8 +11,26 @@
 
 console.log("--- Animal Checker Program ---");
 
-var animal = "cat";
+let animal = "cat";
+
+if (animal === "cat") {
+  console.log("Meow!");
+} else if (animal === "dog") {
+  console.log("Woof!");
+} else {
+  console.log("Must be an alien");
+}
+
 animal = "dog";
+
+if (animal === "cat") {
+  console.log("Meow!");
+} else if (animal === "dog") {
+  console.log("Woof!");
+} else {
+  console.log("Must be an alien");
+}
+
 animal = "frog";
 
 if (animal === "cat") {
