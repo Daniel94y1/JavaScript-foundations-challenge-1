@@ -20,7 +20,7 @@
 */
 let counter = 1;
 while (counter <= 100) {
-  if (counter % 10 === 0) {
+  if (counter % 10 === 0 && counter < 100) {
     console.log("Checkpoint! " + counter);
   }
   if (counter === 50) {
