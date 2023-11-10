@@ -7,12 +7,14 @@
 
     HINT: modulus operator ( % ) is your friend
 */
-let number = 16;
-number = 1;
-number = 34;
-
-if (number % 2 === 0) {
-  console.log("The number is even.");
-} else {
-  console.log("The number is odd.");
+function checkNumberType(number) {
+  if (number % 2 === 0) {
+    console.log("The number is even.");
+  }
+  if (number % 2 !== 0) {
+    console.log("The number is odd.");
+  }
 }
+
+const myNumber = 45;
+checkNumberType(myNumber);

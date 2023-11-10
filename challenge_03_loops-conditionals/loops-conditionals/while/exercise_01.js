@@ -3,20 +3,19 @@
 
     2. Create a while loop that will print out all the odd numbers between 10 and 40.
 */
-let evenNumber = 0;
-console.log("Even numbers between 10 and 40:");
-while (evenNumber <= 40) {
-  if (evenNumber >= 10 && evenNumber % 2 === 0) {
-    console.log(evenNumber);
+function printNumbers(start, end, isEven) {
+  let number = start;
+  const label = isEven ? "Even" : "Odd";
+
+  console.log(`${label} numbers between ${start} and ${end}:`);
+
+  while (number <= end) {
+    if ((isEven && number % 2 === 0) || (!isEven && number % 2 !== 0)) {
+      console.log(number);
+    }
+    number++;
   }
-  evenNumber++;
 }
 
-let oddNumber = 0;
-console.log("Odd numbers between 10 and 40:");
-while (oddNumber <= 40) {
-  if (oddNumber >= 11 && oddNumber % 2 !== 0) {
-    console.log(oddNumber);
-  }
-  oddNumber++;
-}
+printNumbers(10, 40, true);
+printNumbers(10, 40, false);

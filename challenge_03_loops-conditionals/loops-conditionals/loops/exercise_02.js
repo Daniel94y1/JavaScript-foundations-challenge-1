@@ -19,14 +19,28 @@
     All, done!
 */
 
-for (let counter = 1; counter <= 100; counter++) {
-  if (counter % 10 === 0 && counter !== 50 && counter !== 100) {
-    console.log("Checkpoint!", counter);
-  } else if (counter === 50) {
-    console.log("Half way there!");
-  } else if (counter === 100) {
+function isCheckpoint(counter) {
+  return counter % 10 === 0 && counter !== 50 && counter !== 100;
+}
+
+function printMessage(counter) {
+  if (counter === 50) {
+    console.log("Halfway there!");
+  }
+  if (counter === 100) {
     console.log("You made it!");
+  }
+  if (isCheckpoint(counter) && counter !== 50 && counter !== 100) {
+    console.log("Checkpoint!", counter);
   }
 }
 
-console.log("All, done!");
+function runLoopWithCheckpoints(iterations) {
+  for (let counter = 1; counter <= iterations; counter++) {
+    printMessage(counter);
+  }
+
+  console.log("All done!");
+}
+
+runLoopWithCheckpoints(100);

@@ -18,8 +18,7 @@
     You made it!
     All, done!
 */
-let counter = 1;
-while (counter <= 100) {
+function printMessage(counter) {
   if (counter % 10 === 0 && counter < 100) {
     console.log("Checkpoint! " + counter);
   }
@@ -29,6 +28,15 @@ while (counter <= 100) {
   if (counter === 100) {
     console.log("You made it!");
   }
-  counter++;
 }
-console.log("All, done!");
+
+function runLoop() {
+  let counter = 1;
+  while (counter <= 100) {
+    printMessage(counter);
+    counter++;
+  }
+  console.log("All, done!");
+}
+
+runLoop();
