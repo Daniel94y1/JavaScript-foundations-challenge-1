@@ -11,16 +11,13 @@
 
 //Declare variables
 const stringVariable = "Hello cats!";
-    
+
 const numberVariable = 70;
 
-       
 const booleanVariable = true;
 
-        
 const nullVariable = null;
 
-        
 let undefinedVariable;
 
 //Output of the content of the variables
@@ -30,7 +27,3 @@ console.log("Number Variable:", numberVariable);
 console.log("Boolean Variable:", booleanVariable);
 console.log("Null Variable:", nullVariable);
 console.log("Undefined Variable:", undefinedVariable);
-
-
-
-

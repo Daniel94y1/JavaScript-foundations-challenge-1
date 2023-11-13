@@ -6,7 +6,6 @@
     Repeat the above steps but try using a const variable. Comment this new part of code and explain what is happening.
 */
 
-
 //Declare variable
 let sound;
 
@@ -16,12 +15,11 @@ sound = "Moo!";
 // Output variable
 console.log("Sound:", sound);
 
-
 // Declare variable
 // const sound;
 
 // Inicialitze variale
-// // sound = "Moo!"; 
+// // sound = "Moo!";
 
 //Output variable
 //console.log("Sound:", sound);
@@ -32,5 +30,5 @@ console.log("Sound:", sound);
 
 //Solution:
 
-const soundConst="Moo!";
+const soundConst = "Moo!";
 console.log("Sound:", soundConst);

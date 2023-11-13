@@ -6,7 +6,7 @@
 
 //Declare function
 function getTypeOf(value) {
-    return typeof value;
+  return typeof value;
 }
 
 //Output function
@@ -15,6 +15,3 @@ console.log(getTypeOf(70)); //number
 console.log(getTypeOf(true)); //boolean
 console.log(getTypeOf(null)); //null
 console.log(getTypeOf(undefined)); //undefined
-
-
-

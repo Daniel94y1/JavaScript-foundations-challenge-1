@@ -15,17 +15,15 @@ let name = "Daniel";
 
 //Declare function
 function updateValue(value) {
-    name = value;
+  name = value;
 }
 
-
 updateValue("Chopin");
-console.log("Musician: ",name);
-
+console.log("Musician: ", name);
 
 updateValue(true);
 console.log(name);
 
-
 updateValue(28);
-console.log(name);s
+console.log(name);
+s;
